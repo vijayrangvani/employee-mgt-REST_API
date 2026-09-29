@@ -450,12 +450,12 @@ flowchart LR
 
 The authentication subsystem provides user registration and login.
 
-> **Current implementation note:** The existing code currently exposes the authentication routes with the `/auth/auth/...` path because the `/auth` prefix is applied at both router and application inclusion levels. The README documents the current behavior rather than hiding it.
+> **Current implementation note:** The existing code currently exposes the authentication routes with the `/auth/...` path because the `/auth` prefix is applied at both router and application inclusion levels. The README documents the current behavior rather than hiding it.
 
 | Method | Current Route | Purpose |
 |---|---|---|
-| `POST` | `/auth/auth/register` | Register user |
-| `POST` | `/auth/auth/login` | Authenticate user |
+| `POST` | `/auth/register` | Register user |
+| `POST` | `/auth/login` | Authenticate user |
 
 ### Registration
 
